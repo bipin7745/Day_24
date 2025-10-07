@@ -1,0 +1,73 @@
+
+.custom-navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-logo {
+ margin-left: 0;
+  width: 50px;
+  height: 60px;
+}
+
+.brand-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0dcaf0;
+}
+.nav-links .nav-link {
+  position: relative;
+  color: #000;
+  margin-left: 20px;
+  font-size: 1.05rem;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.nav-links .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #0dcaf0;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links .nav-link:hover::after {
+  width: 100%;
+}
+.nav-links .nav-link:hover {
+  color: #0dcaf0 ;
+}
+
+.auth-buttons .login-btn {
+  color: #000;
+  border-color: #0dcaf0;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.auth-buttons .login-btn:hover {
+  background-color: #0dcaf0;
+  color: #000;
+}
+
+.auth-buttons .signup-btn {
+  background-color: #0dcaf0;
+  color: #000;
+  font-weight: 500;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.auth-buttons .signup-btn:hover {
+  background-color: #17d4ff;
+  color: #000;
+}
+
+.navbar-toggler {
+  border-color: #0dcaf0;
+}

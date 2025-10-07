@@ -1,0 +1,5 @@
+/* Hero.css */
+
+.hero-section {
+  background: linear-gradient(to right, #6366f1, #8b5cf6, #ec4899); /* from-indigo-500 via-purple-500 to-pink-500 */
+}

@@ -1,0 +1,34 @@
+/* Specific to "Technologies We Use" card */
+.tech-card {
+  background-image: url('/images/tech.jpg'); /* Make sure this path points correctly to your image in public folder */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* dark overlay for text readability */
+  z-index: 1;
+}
+
+.tech-card .card-body {
+  position: relative;
+  z-index: 2;
+}
+
+.tech-card .card-title,
+.tech-card .card-text {
+  color: #fff;
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 768px) {
+  .tech-card {
+    background-position: top;
+  }
+}
